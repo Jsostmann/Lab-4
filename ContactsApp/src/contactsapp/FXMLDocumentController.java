@@ -82,6 +82,7 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private void handleExitAction(ActionEvent event) {
+        contacts.saveContacts("contacts.txt");
         Platform.exit();
         
     }
